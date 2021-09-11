@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.malakhov.appmarket">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".FilterActivity"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name=".PokupkiActivity" />
+        <activity android:name=".MyCard" />
+        <activity android:name=".AddCard" />
+        <activity android:name=".UsersComments" />
+        <activity android:name=".MyComment" />
+        <activity android:name=".ZoomActivity" />
+        <activity android:name=".BuyActivity" />
+        <activity android:name=".MyCommentsActivity" />
+        <activity android:name=".AdminsListActivity" />
+        <activity android:name=".OrdersActivity" />
+        <activity android:name=".ProductInfo" />
+        <activity android:name=".CharacteristicsActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".MarketActivity" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,2 @@
+rootProject.name = "AppMarket"
+include ':app'

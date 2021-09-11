@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:padding="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parentConstr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp"
+        >
+
+
+        <ImageView
+            android:id="@+id/userPhoto"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/man"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Михаил"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintStart_toEndOf="@+id/userPhoto"
+            app:layout_constraintTop_toTopOf="@+id/userPhoto" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23.01.2019"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toEndOf="@+id/userPhoto"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <RatingBar
+            android:id="@+id/ratingBar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.5"
+            android:scaleX=".4"
+            android:scaleY=".4"
+            android:theme="@style/MyRatingBar"
+            android:transformPivotX="@dimen/_195sdp"
+            android:transformPivotY="@dimen/_7sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/userPhoto"
+            app:layout_constraintTop_toBottomOf="@+id/userPhoto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/_130sdp"
+                    android:text="dgdgd"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Достоинства:"
+            android:textColor="@color/advantages"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Недостатки:"
+            android:textColor="@color/dis"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/advantages" />
+
+        <TextView
+            android:id="@+id/advantages"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Камера, звук, экранКамера, звук"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv1"
+            app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+        <TextView
+            android:id="@+id/disadvantages"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_15ssp"
+            android:text="Камера, звук, экранКамера, звук"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv2"
+            app:layout_constraintTop_toTopOf="@+id/tv2" />
+
+        <LinearLayout
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/disadvantages">
+
+
+            <ImageView
+                android:id="@+id/add1"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_weight="1"
+                android:src="@drawable/add_image"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/add2"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:src="@drawable/add_image"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/add3"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_weight="1"
+                android:src="@drawable/add_image"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/aboutWhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17ssp"
+            android:textColor="@color/price"
+            android:text="Iphone 11 64gb"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/userPhoto"
+            app:layout_constraintTop_toTopOf="@+id/userPhoto" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

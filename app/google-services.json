@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "363066190018",
+    "firebase_url": "https://appmarketdb-default-rtdb.firebaseio.com",
+    "project_id": "appmarketdb",
+    "storage_bucket": "appmarketdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363066190018:android:f1634f37d1a64bc456f35b",
+        "android_client_info": {
+          "package_name": "android.malakhov.appmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363066190018-kqvkjumko3dg031chhf8t2a61ndliejm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAgbxeZaXCvl_osKRqyGcadzrSXwR3lKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363066190018-kqvkjumko3dg031chhf8t2a61ndliejm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

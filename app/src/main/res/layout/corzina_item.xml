@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ramka"
+            >
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.311"
+                app:layout_constraintStart_toEndOf="@+id/photo"
+                app:layout_constraintTop_toTopOf="@+id/photo" />
+
+            <TextView
+                android:id="@+id/opisanie"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:text="1700"
+                android:textColor="@color/price"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/photo" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:text="1"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBottom_toTopOf="@+id/text_under_amount"
+                app:layout_constraintEnd_toEndOf="@+id/text_under_amount"
+                app:layout_constraintStart_toStartOf="@+id/text_under_amount" />
+
+            <TextView
+                android:id="@+id/text_under_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Количество"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/photo" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/buy_btn"
+                app:layout_constraintEnd_toStartOf="@+id/buy_btn"
+                app:layout_constraintStart_toEndOf="@+id/text_under_amount"
+                app:layout_constraintTop_toTopOf="@+id/buy_btn"
+                app:srcCompat="@drawable/trash_box" />
+
+            <Button
+                android:id="@+id/buy_btn"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/buy_and_corzina_buttons"
+                android:text="Купить"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginBottom="@dimen/_15sdp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/amountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/photo"
+                app:layout_constraintStart_toStartOf="@+id/opisanie" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AppMarket</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="appstore_logo">AppMarket</string>
+    <string name="login_button">Login</string>
+    <string name="reg_name">Имя</string>
+    <string name="familia_reg">Фаимлия</string>
+    <string name="ot4estvo_reg">Отчество</string>
+    <string name="pochta_reg">Почта</string>
+    <string name="password_reg">Пароль</string>
+    <string name="main_button">Главная</string>
+    <string name="catalog_btn">Каталог</string>
+    <string name="corzina_btn">Корзина</string>
+    <string name="profila_btn">Профиль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

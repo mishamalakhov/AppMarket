@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_5sdp"
+    android:background="@color/white"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_140sdp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="match_parent"
+            >
+
+            <ScrollView
+                android:id="@+id/scrollView4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/ramka"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView31">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@null"
+                        android:maxLength="10020"
+                        android:hint="Количество слов ограничено"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:textColor="@color/typeTV" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/aboutWhat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/purple"
+                android:text="Мой отзыв о Apple Iphone 11 64gb"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/black"
+                android:text="Ваша оценка:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aboutWhat" />
+
+            <RatingBar
+                android:id="@+id/ratingBar4"
+                style="?android:attr/ratingBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="1"
+                android:theme="@style/MyRatingBar"
+                app:layout_constraintStart_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="@color/black"
+                android:text="Ваша отзыв:"
+                app:layout_constraintStart_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar4" />
+
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textColor="@color/black"
+                android:text="Подытожьте ваш отзыв (заголовок):"
+                app:layout_constraintStart_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView4" />
+
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ramka"
+                android:padding="@dimen/_5sdp"
+                android:inputType="textMultiLine|textCapSentences"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:maxLength="72"
+                android:hint="Количество слов ограничено"
+                android:textColor="@color/typeTV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="Достоинства:"
+                android:textColor="@color/advantages"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+            <EditText
+                android:id="@+id/advantages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ramka"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="Количество слов ограничено"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLength="60"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/typeTV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="Недостатки:"
+                android:textColor="@color/dis"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/advantages" />
+
+
+            <EditText
+                android:id="@+id/disadvantages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ramka"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="Количество слов ограничено"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLength="60"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/typeTV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textColor="@color/black"
+                android:text="Фотографии (необязательно)"
+                app:layout_constraintStart_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/disadvantages" />
+
+
+            <LinearLayout
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView35">
+
+
+                <ImageView
+                    android:id="@+id/add1"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/add_image" />
+
+                <ImageView
+                    android:id="@+id/add2"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/add_image" />
+
+                <ImageView
+                    android:id="@+id/add3"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/add_image" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/sendBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_400sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="Отправить отзыв"
+                android:background="@drawable/buy_and_corzina_buttons"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

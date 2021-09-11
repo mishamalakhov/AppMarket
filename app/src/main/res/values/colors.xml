@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#9B4AFF</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="auntification">#4AEAFF</color>
+    <color name="error_aunt">#BAFF0000</color>
+    <color name="reg_button">#BFBFBF</color>
+    <color name="btn_click">#5BBFBFBF</color>
+    <color name="price">#FF3C69</color>
+    <color name="purple">#B524CD</color>
+    <color name="ligh_grey">#DDDDDD</color>
+    <color name="topCard">#AF16AD</color>
+    <color name="typeTV">#5E5E5E</color>
+    <color name="golden">#FFBF00</color>
+    <color name="dis">#DDFD3D00</color>
+    <color name="advantages">#039F09</color>
+    <color name="ligthPurple">#CE76DD</color>
+    <color name="gradient">#CC4FE3</color>
+
+
+</resources>
