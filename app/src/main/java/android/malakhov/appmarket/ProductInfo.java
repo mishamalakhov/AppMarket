@@ -208,14 +208,14 @@ public class ProductInfo extends AppCompatActivity {
                         break;
 
                     case 9:
-                        if (mProduct.getMainCamera() == 0)
+                        if (mProduct.getMainCamera() == -1)
                             chk.setText("Нет");
                         else
                             chk.setText(mProduct.getMainCamera() + " px");
                         break;
 
                     case 10:
-                        if (mProduct.getFrontCamera() == 0)
+                        if (mProduct.getFrontCamera() == -1)
                             chk.setText("Нет");
                         else
                             chk.setText(mProduct.getFrontCamera() + " px");

@@ -121,6 +121,8 @@ public class CharacteristicsActivity extends AppCompatActivity implements View.O
                 if (position == 2){
                     edit.get(6).setVisibility(View.GONE);
                     edit.get(7).setVisibility(View.GONE);
+                    edit.get(6).setText(String.valueOf(-1));
+                    edit.get(7).setText(String.valueOf(-1));
                 }else{
                     edit.get(6).setVisibility(View.VISIBLE);
                     edit.get(7).setVisibility(View.VISIBLE);
@@ -166,14 +168,8 @@ public class CharacteristicsActivity extends AppCompatActivity implements View.O
                 product.setFleshMemory(Integer.parseInt(edit.get(3).getText().toString()));
                 product.setCapacity(Integer.parseInt(edit.get(4).getText().toString()));
                 product.setDiagonal(Float.parseFloat(edit.get(5).getText().toString()));
-                if (edit.get(6).getVisibility() == View.VISIBLE && edit.get(7).getVisibility() == View.VISIBLE){
-                    product.setMainCamera(Integer.parseInt(edit.get(6).getText().toString()));
-                    product.setFrontCamera(Integer.parseInt(edit.get(7).getText().toString()));
-                }
-                else {
-                    product.setMainCamera(0);
-                    product.setFrontCamera(0);
-                }
+                product.setMainCamera(Integer.parseInt(edit.get(6).getText().toString()));
+                product.setFrontCamera(Integer.parseInt(edit.get(7).getText().toString()));
                 product.setDateOfRelease(Integer.parseInt(edit.get(8).getText().toString()));
                 product.setPrice(Integer.parseInt(edit.get(9).getText().toString()));
                 product.setAmount(Integer.parseInt(edit.get(10).getText().toString()));
