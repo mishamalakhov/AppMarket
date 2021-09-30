@@ -9,30 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".FilterActivity"
+        <activity android:name=".Activities.FilterActivity"
             android:windowSoftInputMode="stateHidden">
         </activity>
-        <activity android:name=".PokupkiActivity" />
-        <activity android:name=".MyCard" />
-        <activity android:name=".AddCard" />
-        <activity android:name=".UsersComments" />
-        <activity android:name=".MyComment" />
-        <activity android:name=".ZoomActivity" />
-        <activity android:name=".BuyActivity" />
-        <activity android:name=".MyCommentsActivity" />
-        <activity android:name=".AdminsListActivity" />
-        <activity android:name=".OrdersActivity" />
-        <activity android:name=".ProductInfo" />
-        <activity android:name=".CharacteristicsActivity"
+        <activity android:name=".Activities.PokupkiActivity" />
+        <activity android:name=".Activities.MyCard" />
+        <activity android:name=".Activities.AddCard" />
+        <activity android:name=".Activities.UsersComments" />
+        <activity android:name=".Activities.SendComment" />
+        <activity android:name=".Activities.ZoomActivity" />
+        <activity android:name=".Activities.BuyActivity" />
+        <activity android:name=".Activities.MyComments" />
+        <activity android:name=".Activities.AdminsListActivity" />
+        <activity android:name=".Activities.OrdersActivity" />
+        <activity android:name=".Activities.ProductInfo" />
+        <activity android:name=".Activities.CharacteristicsActivity"
             android:windowSoftInputMode="stateHidden"/>
-        <activity android:name=".MarketActivity" />
+        <activity android:name=".Activities.MarketActivity" />
 
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/actions" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

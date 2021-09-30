@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FilterActivity">
+    tools:context=".Activities.FilterActivity">
 
     <Button
         android:id="@+id/accept"
@@ -166,7 +166,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
-                    android:id="@+id/Black"
+                    android:id="@+id/Черный"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
@@ -176,107 +176,107 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
                 <CheckBox
-                    android:id="@+id/white"
+                    android:id="@+id/Белый"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Белый"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintStart_toStartOf="@+id/Black"
-                    app:layout_constraintTop_toBottomOf="@+id/Black" />
+                    app:layout_constraintStart_toStartOf="@+id/Черный"
+                    app:layout_constraintTop_toBottomOf="@+id/Черный" />
 
                 <CheckBox
-                    android:id="@+id/red"
+                    android:id="@+id/Красный"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Красный"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintStart_toStartOf="@+id/silver"
-                    app:layout_constraintTop_toBottomOf="@+id/silver" />
+                    app:layout_constraintStart_toStartOf="@+id/Серебристый"
+                    app:layout_constraintTop_toBottomOf="@+id/Серебристый" />
 
                 <CheckBox
-                    android:id="@+id/silver"
+                    android:id="@+id/Серебристый"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Серебристый"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintStart_toStartOf="@+id/white"
-                    app:layout_constraintTop_toBottomOf="@+id/white" />
+                    app:layout_constraintStart_toStartOf="@+id/Белый"
+                    app:layout_constraintTop_toBottomOf="@+id/Белый" />
 
 
                 <CheckBox
-                    android:id="@+id/gold"
+                    android:id="@+id/Золотой"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/_40sdp"
                     android:text="Золотой"
                     android:textSize="@dimen/_15ssp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/Black" />
+                    app:layout_constraintTop_toTopOf="@+id/Черный" />
 
 
                 <CheckBox
-                    android:id="@+id/biruz"
+                    android:id="@+id/Бирюзовый"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Бирюзовый"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintStart_toStartOf="@+id/gold"
-                    app:layout_constraintTop_toBottomOf="@+id/gold" />
+                    app:layout_constraintStart_toStartOf="@+id/Золотой"
+                    app:layout_constraintTop_toBottomOf="@+id/Золотой" />
 
                 <CheckBox
-                    android:id="@+id/yellow"
+                    android:id="@+id/Желтый"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Желтый"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintStart_toStartOf="@+id/biruz"
-                    app:layout_constraintTop_toBottomOf="@+id/biruz" />
+                    app:layout_constraintStart_toStartOf="@+id/Бирюзовый"
+                    app:layout_constraintTop_toBottomOf="@+id/Бирюзовый" />
 
                 <CheckBox
-                    android:id="@+id/green"
+                    android:id="@+id/Зеленый"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Зеленый"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintStart_toStartOf="@+id/yellow"
-                    app:layout_constraintTop_toBottomOf="@+id/yellow" />
+                    app:layout_constraintStart_toStartOf="@+id/Желтый"
+                    app:layout_constraintTop_toBottomOf="@+id/Желтый" />
 
                 <CheckBox
-                    android:id="@+id/purple"
+                    android:id="@+id/Фиолетовый"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Фиолетовый"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintStart_toStartOf="@+id/red"
-                    app:layout_constraintTop_toBottomOf="@+id/red" />
+                    app:layout_constraintStart_toStartOf="@+id/Красный"
+                    app:layout_constraintTop_toBottomOf="@+id/Красный" />
 
 
                 <CheckBox
-                    android:id="@+id/pink"
+                    android:id="@+id/Розовый"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Розовый"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintStart_toStartOf="@+id/purple"
-                    app:layout_constraintTop_toBottomOf="@+id/purple" />
+                    app:layout_constraintStart_toStartOf="@+id/Фиолетовый"
+                    app:layout_constraintTop_toBottomOf="@+id/Фиолетовый" />
 
                 <CheckBox
-                    android:id="@+id/blue"
+                    android:id="@+id/Синий"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Синий"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintStart_toStartOf="@+id/green"
-                    app:layout_constraintTop_toBottomOf="@+id/green" />
+                    app:layout_constraintStart_toStartOf="@+id/Зеленый"
+                    app:layout_constraintTop_toBottomOf="@+id/Зеленый" />
 
                 <CheckBox
-                    android:id="@+id/korall"
+                    android:id="@+id/Коралловый"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Коралловый"
                     android:textSize="@dimen/_15ssp"
-                    app:layout_constraintStart_toStartOf="@+id/blue"
-                    app:layout_constraintTop_toBottomOf="@+id/blue" />
+                    app:layout_constraintStart_toStartOf="@+id/Синий"
+                    app:layout_constraintTop_toBottomOf="@+id/Синий" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -338,7 +338,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/FromFleash"
+                    android:id="@+id/FromFlesh"
                     android:layout_width="@dimen/_60sdp"
                     android:layout_height="wrap_content"
                     android:hint="От"
@@ -357,7 +357,7 @@
                     android:inputType="number"
                     android:textSize="@dimen/_15ssp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/FromFleash" />
+                    app:layout_constraintStart_toEndOf="@+id/FromFlesh" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
